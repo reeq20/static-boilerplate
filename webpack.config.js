@@ -8,7 +8,7 @@ const AbsPath = Object.freeze({
 
 module.exports = () => {
     return {
-        mode: 'development',
+        mode: 'production',
         resolve: {
             alias: {},
             extensions: ['.ts', '.tsx', '.js', '.jsx', '.scss'],
@@ -28,7 +28,7 @@ module.exports = () => {
                 {
                     test: /\.tsx?$/,
                     exclude: path.resolve(__dirname, './node_modules'),
-                    use: 'ts-loader',
+                    use: ['ts-loader'],
                 },
             ]
         },
