@@ -3,7 +3,10 @@
     "outDir": "./public/",
     "baseUrl": "./",
     "paths": {
-//      "@public/*": ["./src/public/*"]
+      "@core/*": ["./src/js/core/*"],
+      "@main/*": ["./src/js/main/*"],
+      "@glsl/*": ["./src/js/glsl/*"],
+      "@html/*": ["./src/html/*"],
     },
     "sourceMap": true,
     "noImplicitAny": true,
